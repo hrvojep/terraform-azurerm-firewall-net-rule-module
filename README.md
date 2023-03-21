@@ -15,6 +15,8 @@ provider "azurerm" {
 
 
 module "project_out_allow_net_rule" {
+  source  = "hrvojep/firewall-net-rule-module/azurerm"
+  version = "1.0.0"
 
   azure_fw_name          = "testfirewall"
   resource_group_name    = "CORE-FW-RG"
@@ -43,7 +45,9 @@ module "project_out_allow_net_rule" {
 }
 
 module "project_out_deny_net_rule" {
-  
+  source  = "hrvojep/firewall-net-rule-module/azurerm"
+  version = "1.0.0"
+
   azure_fw_name          = module.azfirewall.fw_name
   resource_group_name = "CORE-FW-RG"
   rule_collection_name   = "dev_project_deny_rules"
