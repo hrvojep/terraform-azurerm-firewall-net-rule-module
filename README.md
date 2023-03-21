@@ -9,9 +9,6 @@ Each rule collection requires 1 azurefirewall-net-rule-collection module to be c
 A Rule collection can contain multiple related rules (for example all ALLOW or all DENY rules).
 
 ```
-provider "azurerm" {
-  features {}
-}
 
 
 module "project_out_allow_net_rule" {
