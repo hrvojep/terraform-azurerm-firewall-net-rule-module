@@ -1,7 +1,6 @@
 # terraform-azurerm-azurefirewall-rules
 Create Network Rules for an Azure Firewall
 
-
 ## Example deployment
 This example deploys a new Azure firewall resource into an existing subnet (found using the Data Lookup resource) with 2 network rule collections. One rule collection deploys a set of ALLOWED rules and another rule collection for all DENY traffic.
 
